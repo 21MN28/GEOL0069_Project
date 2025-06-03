@@ -16,8 +16,6 @@
 - [Limitations and Future Work](#limitations-and-future-work)
 - [Conclusion](#conclusion)
 - [References](#references)
-- [Repository Structure](#repository-structure)
-- [Usage](#usage)
 
 ## Project Overview
 
@@ -99,17 +97,9 @@ The threshold of ≥0.06 was determined through a rigorous validation process in
 
 ### Feature Engineering
 
-The project develops a comprehensive 24-feature set designed to capture spectral, temporal, spatial, and contextual information relevant to burn detection across diverse ecosystems:
+The project develops a comprehensive 24-feature set capturing spectral changes, spatial patterns, and contextual information relevant to burn detection. Key features include spectral differences (ΔNDVI, Δred, Δgreen, Δblue) that quantify fire-induced changes, the RGB Burn Index as the primary burn indicator, spatial texture measures using gradient magnitude and local standard deviation, and location encoding to capture ecosystem-specific patterns.
 
-**Spectral Features (12)**: Raw RGB channel values from pre- and post-fire imagery provide baseline spectral information. NDVI values calculated as (NIR-Red)/(NIR+Red) from both time periods capture vegetation vigour. Spectral differences (Δred, Δgreen, Δblue, ΔNDVI) quantify fire-induced changes. The Green-Red Vegetation Index change (ΔGRVI) provides an RGB-based vegetation indicator. Brightness changes capture overall reflectance modifications. Red/green ratio changes highlight the characteristic spectral shift toward red wavelengths in burned areas.
-
-**Composite Indices (4)**: The RGB Burn Index serves as the primary target feature for training. An NBR proxy was developed using RGB channels where NIR loss is approximated by green channel decrease and SWIR increase by red channel increase. A vegetation stress index combines NDVI and GRVI changes weighted by their correlation with burn damage. An integrated burn likelihood score combines multiple spectral indicators.
-
-**Spatial Features (2)**: Gradient magnitude calculated using Sobel edge detection on ΔNDVI maps captures burn boundary characteristics important for spatial pattern recognition. Local standard deviation computed using 3×3 kernel operations provides a texture measure that distinguishes burned areas (typically more heterogeneous) from unburned vegetation (more homogeneous).
-
-**Location Encoding (3)**: One-hot encoding for Greece, Turkey, and California captures potential location-specific spectral signatures while allowing models to learn ecosystem-specific patterns without overfitting to geographic coordinates.
-
-**Context Features (3)**: Pre- and post-fire brightness measures provide overall illumination context. Additional spectral ratios capture subtle spectral relationships that may improve discrimination in challenging cases such as partial burns or areas with mixed vegetation recovery.
+The RGB Burn Index serves as both a feature and the foundation for ground truth generation, combining vegetation loss indicators in a weighted formula that proved statistically robust across all three study regions. Additional features include brightness changes, vegetation stress indices, and an NBR proxy developed using RGB channels when SWIR bands are unavailable.
 
 ### Machine Learning Approaches
 
@@ -265,4 +255,18 @@ The research provides a foundation for operational wildfire monitoring systems t
 
 7. San-Miguel-Ayanz, J., Durrant, T., Boca, R., Maianti, P., Libertà, G., Artes-Vivancos, T., ... & Leray, T. (2022). Forest Fires in Europe, Middle East and North Africa 2021. Publications Office of the European Union.
 
-## Repository Structure
+---
+
+*This research was conducted as part of the GEOL0069 AI for Earth Observation course at University College London, demonstrating the application of machine learning techniques to critical environmental monitoring challenges.*
+
+## Contact
+
+**Author**: [Maral Nikkhah]  
+**Email**: [maral.nikkhah.21@ucl.ac.uk]  
+**Institution**: University College London  
+**Course**: GEOL0069 - AI for Earth Observation  
+
+## Acknowledgments
+
+This project was created for GEOL0069 at University College London, taught by Dr. Michel Tsamados and Weibin Chen. Special thanks for their guidance and teaching.
+
