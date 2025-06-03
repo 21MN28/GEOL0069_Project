@@ -205,7 +205,7 @@ Beyond direct carbon savings, satellite-based approaches eliminate vehicle emiss
 
 ### Toward Sustainable AI for Earth Observation
 
-This analysis demonstrates that AI can be part of the solution to environmental challenges while maintaining awareness of its own environmental footprint. The dramatic efficiency gains (99.98% carbon reduction) justify the computational costs, but responsible AI research requires ongoing attention to energy efficiency, algorithm optimization, and the broader environmental context of our technological choices.
+This analysis demonstrates that AI can be part of the solution to environmental challenges while maintaining awareness of its own environmental footprint. The efficiency gains justify the computational costs, but responsible AI research requires ongoing attention to energy efficiency, algorithm optimization, and the broader environmental context of our technological choices.
 
 ## Discussion and Implications
 
@@ -245,7 +245,7 @@ Expansion to burn severity mapping would provide more detailed information for e
 
 This comprehensive study demonstrates that machine learning approaches can effectively detect wildfire burn areas using Sentinel-2 imagery with reasonable generalization across ecosystems. The Random Forest, CNN, and unsupervised K-means approaches all achieved accuracy levels suitable for operational deployment, with cross-ecosystem performance penalties of only 5-6%.
 
-Key findings include the effectiveness of RGB-based burn indices when SWIR data is unavailable, the critical importance of spatial validation in remote sensing applications, the surprising performance of unsupervised methods (87.8% accuracy without labels), and the dramatic environmental benefits of ML approaches compared to traditional field surveys (99.98% carbon reduction).
+Key findings include the effectiveness of RGB-based burn indices when SWIR data is unavailable, the critical importance of spatial validation in remote sensing applications, the surprising performance of unsupervised methods (87.8% accuracy without labels).
 
 The research provides a foundation for operational wildfire monitoring systems that could transform post-fire damage assessment from a weeks-long field campaign to an automated process completed within hours of satellite image acquisition. The methodological framework developed here provides a template for rigorous evaluation of machine learning applications in Earth observation.
 
