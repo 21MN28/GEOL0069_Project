@@ -179,9 +179,15 @@ The RGB burn index threshold validation demonstrated excellent statistical align
 
 ## Environmental Impact Assessment
 
+### The Hidden Cost of AI Research
+
+Machine learning and AI research carry a significant but often invisible environmental cost that the scientific community is only beginning to acknowledge. Every model training session, data processing pipeline, and computational experiment contributes to global energy consumption and carbon emissions. As AI applications proliferate across environmental sciences, it becomes increasingly important to quantify and minimize these impacts, especially when the research aims to address environmental challenges like wildfire monitoring.
+
+This project explicitly tracks computational carbon footprint to demonstrate environmental responsibility and highlight the sustainability benefits of satellite-based approaches over traditional field methods. Understanding the true environmental cost of our algorithms enables informed decisions about computational efficiency and helps establish best practices for sustainable AI research.
+
 ### Computational Carbon Footprint
 
-The project includes comprehensive environmental cost tracking that demonstrates the sustainability benefits of satellite-based monitoring approaches:
+The project includes comprehensive environmental cost tracking using a conservative estimate of 0.5 kg CO₂ per kWh electricity consumption:
 
 | Phase | Duration | Energy (Wh) | Carbon (g CO₂) |
 |-------|:--------:|:-----------:|:--------------:|
@@ -191,11 +197,15 @@ The project includes comprehensive environmental cost tracking that demonstrates
 | Unsupervised Analysis | 8 min | 3.2 | 1.6 |
 | **Total Project** | **73 min** | **58.4** | **29.3** |
 
-### Environmental Implications
+### Environmental Benefits vs Traditional Methods
 
-Traditional field surveys for large wildfire assessment typically require multiple vehicles, helicopter flights, and weeks of personnel time, resulting in approximately 1,500 kg CO₂ emissions per fire assessment. In contrast, the complete machine learning pipeline produces only 29.3g CO₂.
+Traditional field surveys for large wildfire assessment require vehicle transport, helicopter operations, and extended personnel deployment, producing approximately 1,500 kg CO₂ per fire assessment. In contrast, the complete machine learning pipeline produces only 29.3g CO₂.
 
-Beyond carbon footprint reduction, the ML approach eliminates vehicle emissions in sensitive burned ecosystems, reduces human disturbance during critical recovery periods, requires no helicopter flights over dangerous terrain, and enables rapid assessment supporting faster ecosystem protection measures. The scalability means environmental cost per fire assessment decreases dramatically as the system is applied to multiple events throughout a fire season.
+Beyond direct carbon savings, satellite-based approaches eliminate vehicle emissions in sensitive burned ecosystems during critical recovery periods, reduce human disturbance when wildlife may be stressed, and enable rapid assessment supporting faster ecosystem protection measures. The scalability means environmental cost per assessment decreases dramatically as the system is applied across multiple fire events, making it increasingly sustainable as monitoring needs expand under climate change.
+
+### Toward Sustainable AI for Earth Observation
+
+This analysis demonstrates that AI can be part of the solution to environmental challenges while maintaining awareness of its own environmental footprint. The dramatic efficiency gains (99.98% carbon reduction) justify the computational costs, but responsible AI research requires ongoing attention to energy efficiency, algorithm optimization, and the broader environmental context of our technological choices.
 
 ## Discussion and Implications
 
