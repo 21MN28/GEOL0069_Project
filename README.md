@@ -15,6 +15,7 @@
 - [Discussion and Implications](#discussion-and-implications)
 - [Limitations and Future Work](#limitations-and-future-work)
 - [Conclusion](#conclusion)
+- [Code Tutorial and Rundown](#code-tutorial-and-rundown)
 - [References](#references)
 
 ## Project Overview
@@ -176,6 +177,15 @@ Multi-sensor fusion incorporating Landsat, MODIS, and SAR could improve temporal
 This study demonstrates that machine learning approaches can effectively detect wildfire burn areas using Sentinel-2 imagery with reasonable generalization across ecosystems. All three approaches achieved accuracy levels suitable for operational deployment, with cross-ecosystem performance penalties of only 5-6%.
 
 Key findings include the effectiveness of RGB-based burn indices when SWIR data is unavailable, the critical importance of spatial validation in remote sensing applications, and the surprising performance of unsupervised methods without labels. The research provides a foundation for operational wildfire monitoring systems that could transform damage assessment from weeks-long field campaigns to automated processes completed within hours.
+
+
+## Code Tutorial and Rundown
+
+For a comprehensive walkthrough of the code implementation and methodology, watch the detailed tutorial video:
+
+[![Code Tutorial and Rundown](https://img.youtube.com/vi/pL4hfNbUikI/maxresdefault.jpg)](https://www.youtube.com/watch?v=pL4hfNbUikI)
+
+This video provides step-by-step explanations of the machine learning pipeline, feature engineering process, and model implementation details covered in this project.
 
 ## References
 
