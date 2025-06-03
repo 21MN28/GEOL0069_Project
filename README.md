@@ -25,7 +25,7 @@ This project develops and evaluates machine learning approaches for automated wi
 
 The research demonstrates how satellite remote sensing combined with machine learning can provide rapid, cost-effective, and environmentally sustainable alternatives for post-fire damage assessment. Traditional field-based burn mapping approaches are labour-intensive, time-consuming, and often infeasible over large or inaccessible regions, requiring weeks to months and producing significant carbon emissions from vehicle and helicopter operations.
 
-![Methodology Overview](infographs/methodology_overview.png)
+<img src="https://github.com/21MN28/GEOL0069_Project/blob/main/methodology_overview.png?raw=true" /> 
 *Figure 1: Complete methodology workflow showing image acquisition, RGB burn index calculation, statistical thresholding, and data preparation for machine learning. The RGB burn index (BI = 2R - GB) provides an innovative solution when traditional NBR calculation using SWIR bands is unavailable.*
 
 The project implements three distinct machine learning approaches with rigorous spatial validation: Random Forest (supervised ensemble method), Convolutional Neural Networks (supervised deep learning), and K-means clustering (unsupervised pattern recognition). Each approach is evaluated using 50×50 pixel spatial blocking to prevent data leakage and ensure realistic performance assessment for operational deployment.
@@ -70,7 +70,7 @@ Specific research objectives include:
 
 ## Methodology
 
-![Data Split Strategy](infographs/data_split.png)
+<img src="https://github.com/21MN28/GEOL0069_Project/blob/main/data_split.png?raw=true" /> 
 *Figure 2: Spatial data splitting strategy showing training/validation allocation across regions and the three machine learning approaches. Turkey provides intra-ecosystem evaluation through spatial blocking, Greece serves as additional training data, and California tests cross-ecosystem generalisation. Each method processes identical spatial blocks to ensure fair comparison.*
 
 ### Study Areas and Data Acquisition
