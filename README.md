@@ -84,7 +84,7 @@ A critical innovation is the development of a RGB-based burn index for ground tr
 
 **RGB Burn Index = 0.5 × ΔGRVI + 0.3 × Δgreen + 0.2 × Δred**
 
-Where ΔGRVI captures vegetation vigour loss, Δgreen represents chlorophyll decrease, and Δred indicates exposed soil and char signatures. The threshold of ≥0.06 was determined through visual correlation with post-fire imagery and statistical optimization using ROC analysis, showing excellent alignment with ROC-optimal values across all regions.
+Where ΔGRVI captures vegetation vigour loss, Δgreen represents chlorophyll decrease, and Δred indicates exposed soil and char signatures. The threshold of ≥0.06 was determined through visual correlation with post-fire imagery and statistical optimisation using ROC analysis, showing excellent alignment with ROC-optimal values across all regions.
 
 ### Feature Engineering
 
@@ -96,7 +96,7 @@ The project develops a comprehensive 24-feature set capturing spectral changes, 
 The Random Forest implementation uses balanced class weights to address natural class imbalance, 100 estimators for stable predictions, and square root feature subsampling for diversity. The model was trained on 500,000 stratified samples from Greece and Turkey data, requiring approximately 4.2 minutes with a computational carbon footprint of 3.9g CO₂.
 
 #### Convolutional Neural Network (Supervised)
-The CNN processes 32×32×8 input patches combining pre-RGB, post-RGB, pre-NDVI, and post-NDVI channels. The architecture uses progressive convolution blocks (32→64→128 filters) with batch normalization, progressive dropout rates, and data augmentation for improved generalization.
+The CNN processes 32×32×8 input patches combining pre-RGB, post-RGB, pre-NDVI, and post-NDVI channels. The architecture uses progressive convolution blocks (32→64→128 filters) with batch normalisation, progressive dropout rates, and data augmentation for improved generalisation.
 
 #### K-means Clustering (Unsupervised)
 The unsupervised approach demonstrates burn detection without labeled training data. The pipeline uses StandardScaler preprocessing, PCA dimensionality reduction, and K=2 clustering with burn likelihood scoring based on spectral signatures. This achieved 87.7% accuracy without using any labeled data.
@@ -174,7 +174,7 @@ Multi-sensor fusion incorporating Landsat, MODIS, and SAR could improve temporal
 
 ## Conclusion
 
-This study demonstrates that machine learning approaches can effectively detect wildfire burn areas using Sentinel-2 imagery with reasonable generalization across ecosystems. All three approaches achieved accuracy levels suitable for operational deployment, with cross-ecosystem performance penalties of only 5-6%.
+This study demonstrates that machine learning approaches can effectively detect wildfire burn areas using Sentinel-2 imagery with reasonable generalisation across ecosystems. All three approaches achieved accuracy levels suitable for operational deployment, with cross-ecosystem performance penalties of only 5-6%.
 
 Key findings include the effectiveness of RGB-based burn indices when SWIR data is unavailable, the critical importance of spatial validation in remote sensing applications, and the surprising performance of unsupervised methods without labels. The research provides a foundation for operational wildfire monitoring systems that could transform damage assessment from weeks-long field campaigns to automated processes completed within hours.
 
