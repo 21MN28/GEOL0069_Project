@@ -191,9 +191,9 @@ The project includes comprehensive environmental cost tracking that demonstrates
 | Unsupervised Analysis | 8 min | 3.2 | 1.6 |
 | **Total Project** | **73 min** | **58.4** | **29.3** |
 
-### Environmental Benefits
+### Environmental Implications
 
-Traditional field surveys for large wildfire assessment typically require multiple vehicles, helicopter flights, and weeks of personnel time, resulting in approximately 1,500 kg CO₂ emissions per fire assessment. In contrast, the complete machine learning pipeline produces only 29.3g CO₂, representing a **99.98% reduction** in carbon emissions.
+Traditional field surveys for large wildfire assessment typically require multiple vehicles, helicopter flights, and weeks of personnel time, resulting in approximately 1,500 kg CO₂ emissions per fire assessment. In contrast, the complete machine learning pipeline produces only 29.3g CO₂.
 
 Beyond carbon footprint reduction, the ML approach eliminates vehicle emissions in sensitive burned ecosystems, reduces human disturbance during critical recovery periods, requires no helicopter flights over dangerous terrain, and enables rapid assessment supporting faster ecosystem protection measures. The scalability means environmental cost per fire assessment decreases dramatically as the system is applied to multiple events throughout a fire season.
 
