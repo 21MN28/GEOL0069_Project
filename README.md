@@ -127,7 +127,7 @@ All three approaches showed consistent 5-6% accuracy reduction when transferring
 
 ### Statistical Validation
 
-The RGB burn index threshold validation demonstrated excellent alignment across regions:
+The RGB burn index threshold validation demonstrated good alignment across regions:
 - **Turkey**: ROC-optimal 0.0600 vs selected 0.06 (perfect alignment)
 - **Greece**: ROC-optimal 0.0668 vs selected 0.06 (0.007 difference)
 - **California**: ROC-optimal 0.0692 vs selected 0.06 (0.009 difference)
